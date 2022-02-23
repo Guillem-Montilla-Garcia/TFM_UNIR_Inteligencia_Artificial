@@ -80,7 +80,7 @@ class IntensitiesFilterNode(object):
         self.time = rospy.get_time()
 
 	#Setting the publisher topic
-        self.pub_range = rospy.Publisher("/sparus2/imagenex_852_echosounder/echo_0_range", Range, queue_size = 1)
+        self.pub_range = rospy.Publisher("/sparus2/imagenex_852_echosounder/echo_0_filtered_range", Range, queue_size = 1)
 
 	#Setting the subscriber topic
         self.sub_vehicle_position = rospy.Subscriber('/sparus2/imagenex_852_echosounder/echo_0_intensities', LaserScan,self.cbk_intensities, queue_size = 1)
