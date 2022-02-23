@@ -10,7 +10,6 @@ from scipy import ndimage
 import rospy
 
 from sensor_msgs.msg import Range , LaserScan
-from subdron_mission_handler.msg import MHVehicleOdom
 
 from std_srvs.srv import Trigger, TriggerResponse
 import tf2_ros
